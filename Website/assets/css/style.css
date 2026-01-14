@@ -1,0 +1,60 @@
+:root {
+    --green-light: rgb(84, 196, 114);
+    --green-medium: rgb(52, 138, 75);
+    --green-dark: rgb(29, 84, 44);
+    --grey-light: rgb(245, 245, 245);
+    --grey-dark: #333;
+    --white: #ffffff;
+    --black: #111111;
+  
+    --font-main: 'Segoe UI', 'Roboto', sans-serif;
+    --transition: 0.3s ease-in-out;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: var(--font-main);
+    background: var(--grey-light);
+    color: var(--black);
+    line-height: 1.6;
+}
+  
+.btn {
+    background: var(--green-light);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: var(--transition);
+    display: inline-block;
+}
+  
+.btn:hover {
+    background: var(--green-medium);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+  
+section h1, main h1 {
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
+    text-align: center;
+    color: var(--green-light);
+    position: relative;
+}
+  
+section h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: var(--green-dark);
+    margin: 0.5rem auto;
+    border-radius: 2px;
+}

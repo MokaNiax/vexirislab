@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 8%;
+    background: var(--white);
+    color: var(--black);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+  
+header .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--green-dark);
+    text-decoration: none;
+    transition: var(--transition);
+}
+  
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+  
+header nav ul li a {
+    text-decoration: none;
+    color: var(--grey-dark);
+    font-weight: 500;
+    transition: var(--transition);
+}
+  
+header nav ul li a:hover {
+    color: var(--green-medium);
+}
+  
